@@ -1,0 +1,65 @@
+/*SECTION1, SECTION2, SECTION4*/
+.section1 figure, .section2 figure, .section4 figure{
+    margin:0.5%;
+}
+
+
+/*SECTION3*/
+.cards{
+    flex-wrap:wrap;
+    justify-content: space-between !important;
+}
+
+.card{
+    flex: 1 1 20% !important;
+    background-color:var(--white);
+    margin:0.5%;
+}
+
+.card figure{
+    position:relative;
+}
+
+.card figure img{
+    width:100%;
+    width:100px;
+    height:120px;
+    object-fit:contain;
+}
+
+.card .tag{
+    position:absolute;
+    top:-10%;
+    right:-30%;
+    z-index:1;
+    background-color:red;
+    color:var(--white);
+    padding:0.5rem;
+    border-radius:50%;
+    font-weight:600;
+}
+
+.card .title{
+    line-height:0;
+    font-weight:300;
+    color:var(--dark);
+}
+
+.card .discount{
+    display:flex;
+    align-items:center;
+    color:var(--green);
+}
+
+.card .discount strike{
+    font-size:12px;
+}
+
+.card .price{
+    color:var(--primary);
+    line-height:0;
+}
+
+.card .discount b{
+    margin-left:0.5rem;
+}
